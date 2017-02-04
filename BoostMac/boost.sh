@@ -194,7 +194,7 @@ buildBoostForIPhoneOS()
     doneSection
 
     echo building Boost for OSX
-    ./b2 -j16 --build-dir=osx-build --stagedir=osx-build/stage toolset=clang cxxflags="-std=c++11 -stdlib=libc++ -arch i386 -arch x86_64" linkflags="-stdlib=libc++" link=static threading=multi macosx-version=${OSX_SDKVERSION} stage
+    ./b2 -j16 --build-dir=osx-build --stagedir=osx-build/stage toolset=clang cxxflags="-std=c++11 -stdlib=libc++ -arch i386 -arch x86_64" linkflags="-stdlib=libc++" link=static threading=multi macosx-version=10.9 stage
     doneSection
 }
 
