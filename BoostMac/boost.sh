@@ -143,7 +143,7 @@ using darwin : ${IPHONE_SDKVERSION}~iphonesim
 : <architecture>x86 <target-os>iphone
 ;
 using darwin : ${OSX_SDKVERSION}
-: g++ -arch i386 -arch x86_64 -fvisibility=hidden -fvisibility-inlines-hidden $EXTRA_CPPFLAGS
+: g++ -arch i386 -arch x86_64 -fvisibility=hidden -fvisibility-inlines-hidden -mmacosx-version-min=10.9 $EXTRA_CPPFLAGS
 : <striper> <root>$XCODE_ROOT/Platforms/MacOSX.platform/Developer
 : <architecture>x86 <target-os>darwin
 ;
